@@ -4,7 +4,7 @@ from flask import Flask, request, render_template
 import pickle
 
 app = Flask(__name__)
-model = pickle.load(open('dipankar.pkl', 'rb'))
+model = pickle.load(open('health.pkl', 'rb'))
 
 @app.route('/')
 def home():
