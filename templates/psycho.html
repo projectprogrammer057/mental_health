@@ -1,0 +1,146 @@
+<!-- This is GUI for Mental Disorder Detection Application Using Machine Learning  Algorithm-->
+
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>MENTAL HEALTH DETECTED BY KALAM SARDAR</title>
+
+  <style>
+    /* CSS code for button */
+    body {
+      background-image: url('https://thumbs.dreamstime.com/b/word-mental-illness-composed-wooden-dices-word-mental-illness-composed-wooden-dices-pills-documents-pen-161359322.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+
+    /* CSS code for button */
+    .button_css {
+    color: #494949 !important;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: #ffffff;
+    padding: 20px;
+    border: 4px solid #494949 !important;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+    }
+    
+    .button_css:hover {
+    color: #ffffff !important;
+    background: #f6b93b;
+    border-color: #f6b93b !important;
+    transition: all 0.4s ease 0s;
+    }
+	h1{
+	color:red;
+	}
+@media(min-width:1200px){
+	 
+	
+	
+	}
+	@media(min-width:992px) and (max-width:1199px){
+	
+	body{
+	  position:absolute;
+	  width:950px;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: contain;
+	  margin:10px;
+	   }
+	
+	}
+	@media(min-width:768px) and (max-width:951px){
+	body{
+	  position:absolute;
+	  width:750px;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: contain;
+	  margin:10px;
+	   }
+	
+	
+	}
+	@media(min-width:576px) and (max-width:767px){
+	 body{
+	  position:absolute;
+	  width:550px;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: contain;
+	  margin:10px;
+	   }
+	
+	}
+	@media(max-width:575px){
+	body{
+	  position:absolute;
+	  width:475px;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: contain;
+	  margin:10px;
+	   }
+	   
+	}
+
+  </style>
+
+</head>
+
+<body>
+
+
+ 
+ 
+ <div class="login">
+	
+    <!-- Get input for predict the Mental Disorder -->
+    <center>
+    <form action="{{ url_for('predict')}}" method="POST" action="/">
+	    <h1>MENTAL ILLNESS DECTECTED BY KALAM SARDAR>>>></h1>
+        <h1>Enter Your Some Characteristic>>></h1>
+        
+    	<input type="text" name="currently_employed" placeholder="Currently Employee?" required="required" />
+		<input type="text" name="legally_disabled" placeholder="Are you disabled?" required="required" />
+		<input type="text" name="regular_access_internet" placeholder="regularly access internet?" required="required" />
+		<input type="text" name="live_with_parents" placeholder="Have you lived parents?" required="required" />
+		<input type="text" name="Lack_of_concentration" placeholder="lack of concentration?" required="required" />
+        <input type="text" name="Anxiety" placeholder="Have you Anxiety?" required="required" />
+		<br>
+		<input type="text" name="Depression" placeholder="Have you Depression?" required="required" />
+		<input type="text" name="Obsessive_thinking" placeholder="obsessive thinking?" required="required" />
+    	<input type="text" name="Mood_swings" placeholder="Have you mood swings?" required="required" />
+        <input type="text" name="Panic_attacks" placeholder="Have you panic attacks?" required="required" />
+		<input type="text" name="Compulsive_behavior" placeholder="Compulsive behaviour?" required="required" />
+		<input type="text" name="Tiredness" placeholder="Have you Tiredness?" required="required" />
+		<br>
+		<input type="text" name="Age" placeholder="Enter your Age:" required="required" />
+		<input type="text" name="Female" placeholder="Are you Female?" required="required" />
+        <input type="text" name="Male" placeholder="'Are you Male?" required="required" />
+        <br>
+        <br>
+        
+        <!-- Show button -->
+        <div class="button_cont" align="center"><a class="button_css" href="https://www.linkedin.com/in/kalam-sardar-5469941a3/" target="_blank" rel="nofollow noopener">
+            <button type="submit" class="btn btn-primary btn-block btn-large"><strong>Predict Disorder</strong></button></a>
+        </div>
+        
+    </form>
+    </center>
+   
+   <!-- Show predicted output using ML model --> 
+   <div>
+       <center>
+   <h1>{{ prediction_text }}</h1>
+       </center>
+   </div>
+
+ </div>
+
+</body>
+</html>
