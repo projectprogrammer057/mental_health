@@ -32,9 +32,12 @@
     border-color: #f6b93b !important;
     transition: all 0.4s ease 0s;
     }
-	h1{
+	h3{
 	color:red;
 	}
+   .fear{
+	color:green;
+	  }
 @media(min-width:1200px){
 	 
 	
@@ -104,8 +107,8 @@
     <!-- Get input for predict the Mental Disorder -->
     <center>
     <form action="{{ url_for('predict')}}" method="POST" action="/">
-	    <h1>MENTAL ILLNESS DECTECTED BY KALAM SARDAR>>>></h1>
-        <h1>Enter Your Some Characteristic>>></h1>
+	    <h3>MENTAL ILLNESS DECTECTED BY KALAM SARDAR>>>></h3>
+        <h3>Enter Your Some Characteristic>>></h3>
         
     	<input type="text" name="currently_employed" placeholder="Currently Employee?" required="required" />
 		<input type="text" name="legally_disabled" placeholder="Are you disabled?" required="required" />
@@ -138,7 +141,7 @@
    <!-- Show predicted output using ML model --> 
    <div>
        <center>
-   <h1>{{ prediction_text }}</h1>
+   <h3 class="fear">{{ prediction_text }}</h3>
        </center>
    </div>
 
