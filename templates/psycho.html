@@ -38,6 +38,9 @@
    .fear{
 	color:green;
 	  }
+	 h5{
+	 color:green;
+	  }
 @media(min-width:1200px){
 	 
 	
@@ -109,7 +112,7 @@
     <form action="{{ url_for('predict')}}" method="POST" action="/">
 	    <h3>MENTAL ILLNESS DECTECTED BY KALAM SARDAR>>>></h3>
         <h3>Enter Your Some Characteristic>>></h3>
-        
+	    <h5>If Your Answer Yes:Please Enter 1,Your Answer No:Please Enter 0</h5>
     	<input type="text" name="currently_employed" placeholder="Currently Employee?" required="required" />
 		<input type="text" name="legally_disabled" placeholder="Are you disabled?" required="required" />
 		<input type="text" name="regular_access_internet" placeholder="regularly access internet?" required="required" />
@@ -146,6 +149,8 @@
    </div>
 
  </div>
+	
+	
 
 </body>
 </html>
