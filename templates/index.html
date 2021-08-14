@@ -1,0 +1,778 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
+
+    <title>Mental illness Detection</title>
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+
+        }
+
+        .carousel-inner img {
+            height: 70vh;
+        }
+
+
+
+        .details h2 {
+
+            position: relative;
+            top: 100px;
+            margin: auto;
+            color: rgb(18, 231, 231);
+            font-size: 3rem;
+        }
+
+        label:hover {
+            transform: scale(1.03);
+        }
+
+        .details h2 {
+            /* margin-bottom: 300px; */
+            position: relative;
+            top: 100px;
+            margin: auto;
+            color: rgb(18, 231, 231);
+            font-size: 3rem;
+
+        }
+
+        .gallery-h1 h1 {
+
+            background-color: rgb(44, 43, 43);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+
+        }
+
+        .details h1 {
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            background-color: rgb(45, 47, 49);
+        }
+
+        #electrical {
+
+            font-size: 20px;
+            background-color: rgb(255, 252, 252);
+            border-radius: 20px;
+            outline: none;
+            width: 315px;
+            color: rgb(0, 0, 0);
+            border: 3px solid rgb(45, 47, 49);
+
+        }
+
+
+        #tech {
+
+            margin-top: 50px;
+			margin:auto;
+            padding: 15px 35px;
+            background-color: Silver;
+            border-radius: 10px;
+            color: black;
+            font-size: 1.0rem;
+            border: 4px solid rgb(31, 185, 190);
+			 justify-content: center;
+            align-items: center;
+			text-align: center;
+			display: flex;
+        }
+
+        .carousel-caption {
+            background: rgba(24, 25, 26, 0.5);
+            border-radius: 10px;
+        }
+
+        .carousel-caption h3 {
+
+
+            font-family: 'Rowdies', cursive;
+            color: yellow;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+
+        }
+
+        .carousel-caption p {
+            padding: 7px;
+
+        }
+
+        .img-thumbnail {
+            height: 300px;
+        }
+
+        .Content-h5 {
+
+            padding: 15px;
+            background-color: rgb(153, 156, 150);
+            color: white;
+            border-radius: 15px;
+            margin-bottom: 25px;
+        }
+
+        @media only screen and (max-width: 325px) {
+            body {
+                font-size: x-small;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <header>
+	<div class="container-fluid">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+                    <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+					<li data-target="#myCarousel" data-slide-to="3" class=""></li>
+					<li data-target="#myCarousel" data-slide-to="4" class=""></li>
+					<li data-target="#myCarousel" data-slide-to="5" class=""></li>
+					<li data-target="#myCarousel" data-slide-to="6" class=""></li>
+					<li data-target="#myCarousel" data-slide-to="7" class=""></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active ">
+                        <img src="static\images\men1.jpg" class="d-block w-100" alt="...">
+
+                        <div class="container">
+                            <div class="container background-img3">
+                                <div class="carousel-caption">
+
+                                    <h3>What is Mental illness?</h3>
+                                    <p>
+  A mental illness is a condition that affects a person's thinking, feeling, behavior or mood. These conditions deeply impact day-to-day living and may also affect the ability to relate to others. If you have — or think you might have — a mental illness
+			  </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="static\images\men2.jpg" class="d-block w-100" alt="...">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h3>
+
+
+What causes mental illness?
+
+                                </h3>
+                                <p>
+
+
+Mental illness itself occurs from the interaction of multiple genes and other factors -- such as stress, abuse, or a traumatic event -- which can influence, or trigger, an illness in a person who has an inherited susceptibility to it.
+
+
+					   </p>
+
+                            </div>
+                        </div>
+                    </div>
+  <div class="carousel-item">
+                        <img src="static\images\men3.jpg" class="d-block w-100" alt="...">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h3>
+Why mental health is so important?
+
+                                </h3>
+                                <p>
+
+
+It affects how we think, feel, and act. It also helps determine how we handle stress, relate to others, and make healthy choices. Mental health is important at every stage of life, from childhood and adolescence through adulthood.
+</p>
+
+                            </div>
+                        </div>
+                    </div>
+                 <div class="carousel-item">
+                        <img src="static\images\men4.jpg" class="d-block w-100" alt="...">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h3>What is poor mental health?
+                                </h3>
+                                <p>
+
+
+
+Simply put, this is when our mental health is not what we would want it to be. Finding it difficult to manage how we think, feel, act with respect to daily stresses could be a sign of poor mental health. Having continuous episodes of mental ill health could indicate a problem.
+			</p>
+
+                            </div>
+                        </div>
+                    </div>
+					<div class="carousel-item">
+                        <img src="static\images\men5.jpg" class="d-block w-100" alt="...">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h3>
+Is mental illness permanent?
+                                </h3>
+                                <p>
+
+
+
+Mental illness is most often not 'permanent' in the sense that its effects are not consistent over time, though the pattern of impairment and functioning can persist for many years.
+
+	</p>
+
+                            </div>
+                        </div>
+                    </div>
+					<div class="carousel-item">
+                        <img src="static\images\men6.jpg" class="d-block w-100" alt="...">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h3>
+Does medication cure mental illness?
+
+                                </h3>
+                                <p>
+
+
+
+Medications. Although psychiatric medications don't cure mental illness, they can often significantly improve symptoms. Psychiatric medications can also help make other treatments, such as psychotherapy, more effective
+
+
+							</p>
+
+                            </div>
+                        </div>
+                    </div>
+					<div class="carousel-item">
+                        <img src="static\images\men7.jpg" class="d-block w-100" alt="...">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h3>
+
+
+
+What happens if mental illness is not treated?
+
+							   </h3>
+                                <p>
+
+
+Chronic mental illness can lead to aches, pains, and gastrointestinal distress that have no physical source. Over time, your aches and pains become detrimental to your physical health. You may develop serious physical injuries that make it even more difficult to recover from mental illness		</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="static\images\men8.jpg" class="d-block w-100" alt="...">
+                        <div class="container">
+                            <div class="container ">
+                                <div class="carousel-caption">
+                                    <h3>Can depression change your personality?
+                                     </h3>
+<p>
+The findings suggest that self-reported personality traits do not change after a typical episode of major depression. Future studies are needed to determine whether such change occurs following more severe, chronic, or recurrent episodes of depression.
+	</p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev" >
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </header>
+	<div>
+                    <h5 style="padding: 15px; background-color: rgb(153, 156, 150); color: white;"
+                        class="text-center mb-5 content-h1 rounded">
+Mental illness Detection</h5>
+                </div>
+				 <h2 class="text-center mt-4 mb-4" style="font-size: 2rem;">
+			If Your Answer Yes:Please Enter 1,Your Answer No:Please Enter 0
+</h2>
+<div class="container">
+            <form action="{{ url_for('predict')}}" method="POST" action="/">
+
+    	<input type="text" name="currently_employed" placeholder="Currently Employee?" required="required" />
+		<input type="text" name="legally_disabled" placeholder="Are you disabled?" required="required" />
+		<input type="text" name="regular_access_internet" placeholder="Regularly access internet?" required="required" />
+		<input type="text" name="live_with_parents" placeholder="Have you lived parents?" required="required" />
+		<input type="text" name="Lack_of_concentration" placeholder="Lack of concentration?" required="required" />
+        <input type="text" name="Anxiety" placeholder="Have you Anxiety?" required="required" />
+		<br>
+		<input type="text" name="Depression" placeholder="Have you Depression?" required="required" />
+		<input type="text" name="Obsessive_thinking" placeholder="Obsessive thinking?" required="required" />
+    	<input type="text" name="Mood_swings" placeholder="Have you mood swings?" required="required" />
+        <input type="text" name="Panic_attacks" placeholder="Have you panic attacks?" required="required" />
+		<input type="text" name="Compulsive_behavior" placeholder="Compulsive behaviour?" required="required" />
+		<input type="text" name="Tiredness" placeholder="Have you Tiredness?" required="required" />
+		<br>
+		<input type="text" name="Age" placeholder="Enter your Age:" required="required" />
+		<input type="text" name="Female" placeholder="Are you Female?" required="required" />
+        <input type="text" name="Male" placeholder="'Are you Male?" required="required" />
+        <br>
+		<br>
+                <button  id="tech">Predict  Disorder</button>
+
+            </form>
+
+		<div>
+       <center>
+   <h4 style="color:red;">{{ prediction_text }}</h4>
+       </center>
+   </div>
+
+ </div>
+ <br>
+ <section>
+
+        <div class="container">
+            <h5 style="padding: 15px; background-color: rgb(153, 156, 150); color: white;"
+                class="text-center my-3 content-h1">
+                SOME  PSYCHOLOGICAL DISORDER</h5>
+        </div>
+
+
+
+            <div class="col-sm">
+
+
+                <div class="details">
+
+                    <h5>
+
+                       Mental illness is a medical problem, just like heart disease or diabetes. Mental illnesses are health conditions involving changes in emotion, thinking or behavior (or a combination of these). Mental illnesses are associated with distress and/or problems functioning in social, work or family activities. Mental illness is common.Now we are going to describe about Some mental disorder:-</br></br>
+						<h5 style="text-align:center; color:red;">Clinical Depression</h5>
+		 <h5 style="color:blue;"><u>1.Overview</u></h5><br>
+<p>
+A mental health disorder characterised by persistently depressed mood or loss of interest in activities, causing significant impairment in daily life.<br>
+Possible causes include a combination of biological, psychological and social sources of distress. Increasingly, research suggests that these factors may cause changes in brain function, including altered activity of certain neural circuits in the brain.<br>
+The persistent feeling of sadness or loss of interest that characterises major depression can lead to a range of behavioural and physical symptoms. These may include changes in sleep, appetite, energy level, concentration, daily behaviour or self-esteem. Depression can also be associated with thoughts of suicide.<br>
+The mainstay of treatment is usually medication, talk therapy or a combination of the two. Increasingly, research suggests that these treatments may normalise brain changes associated with depression<br>
+
+</p>
+
+		 <h5 style="color:blue;"><u>2.Symptoms</u></h5><br>
+<p>
+<b>Mood: </b>anxiety, apathy, general discontent, guilt, hopelessness, loss of interest, loss of interest or pleasure in activities, mood swings, or sadness<br>
+<b>Behavioural:</b> agitation, excessive crying, irritability, restlessness, or social isolation<br>
+<b>Sleep:</b> early awakening, excess sleepiness, insomnia, or restless sleep<br>
+<b>Whole body:</b> excessive hunger, fatigue, or loss of appetite<br>
+<b>Cognitive: </b>lack of concentration, slowness in activity, or thoughts of suicide<br>
+<b>Weight:</b> weight gain or weight loss<br>
+<b>Also common:</b> poor appetite or repeatedly going over thoughts			<br>
+</p>
+<div class="text-center rounded-circle">
+<img src="static\images\clinical_depression.jpg" style="width:350px; height:200px;" class="rounded-circle">
+</div>
+<br>
+
+		 <h5 style="color:blue;"><u>3.Treatments</u></h5><br>
+<p>
+<b>Treatment consists of antidepressants:</b>
+The mainstay of treatment is usually medication, talk therapy or a combination of the two. Increasingly, research suggests that these treatments may normalise brain changes associated with depression.</br>
+<b>Therapies:</b>
+Cognitive behavioral therapy, Behaviour therapy and Psychotherapy<br>
+<b>Medications:</b>
+SSRIs, Antidepressant and Anxiolytic	(Always Consult to your own Psychiatrist)
+
+</p>
+
+
+<br>
+<h5 style="text-align:center; color:red;">Anxiety Disorder</h5>
+		 <h5 style="color:blue;"><u>1.Overview</u></h5><br>
+<p>
+A mental health disorder characterised by feelings of worry, anxiety or fear that are strong enough to interfere with one's daily activities.<br>
+Examples of anxiety disorders include panic attacks, obsessive-compulsive disorder and post-traumatic stress disorder.<br>
+Symptoms include stress that's out of proportion to the impact of the event, inability to set aside a worry and restlessness.<br>
+Treatment includes counselling or medication, including antidepressants.<br>
+
+</p>
+
+		 <h5 style="color:blue;"><u>2.Symptoms</u></h5><br>
+<p>
+<b>Behavioural:</b> hypervigilance, irritability, or restlessness<br>
+<b>Cognitive:</b> lack of concentration, racing thoughts, or unwanted thoughts<br>
+<b>Whole body:</b> fatigue or sweating<br>
+<b>Also common:</b> anxiety, excessive worry, fear, feeling of impending doom, insomnia, nausea, palpitations, or trembling
+</p>
+<div class="text-center rounded-circle">
+<img src="static\images\anxiety_disorder.jpg" style="width:350px; height:200px;" class="rounded-circle">
+</div>
+<br>
+
+		 <h5 style="color:blue;"><u>3.Treatments</u></h5><br>
+<p>
+<b>Self-care:</b>
+Avoid alcohol, Reduce caffeine intake, Physical exercise, Quitting smoking, Relaxation techniques, Stress management and Healthy diet.<br>
+<b>Therapies:</b>
+Cognitive behavioral therapy, Meditation and Psychotherapy	<br>
+<b>Medications:</b>
+SSRIs, Anxiolytic, Antidepressant, Sedative and Nerve pain medication(Always Consult to your own Psychiatrist)
+</p>
+
+
+<br>
+<h5 style="text-align:center; color:red;">Bipolar Disorder</h5>
+		 <h5 style="color:blue;"><u>1.Overview</u></h5><br>
+<p>
+A disorder associated with episodes of mood swings ranging from depressive lows to manic highs.<br>
+The exact cause of bipolar disorder isn’t known, but a combination of genetics, environment and altered brain structure and chemistry may play a role.<br>
+Manic episodes may include symptoms such as high energy, reduced need for sleep and loss of touch with reality. Depressive episodes may include symptoms such as low energy, low motivation and loss of interest in daily activities. Mood episodes last days to months at a time and may also be associated with suicidal thoughts.<br>
+Treatment is usually lifelong and often involves a combination of medications and psychotherapy.	<br>
+</p>
+
+		 <h5 style="color:blue;"><u>2.Symptoms</u></h5><br>
+<p>
+<b>Mood:</b> mood swings, sadness, elevated mood, anger, anxiety, apathy, apprehension, euphoria, general discontent, guilt, hopelessness, loss of interest, or loss of interest or pleasure in activities<br>
+<b>Behavioural: </b>irritability, risk-taking behaviours, disorganised behaviour, aggression, agitation, crying, excess desire for sex, hyperactivity, impulsivity, restlessness, or self-harm<br>
+<b>Cognitive:</b> unwanted thoughts, delusion, lack of concentration, racing thoughts, slowness in activity, or false belief of superiority<br>
+<b>Psychological:</b> depression, manic episode, agitated depression, or paranoia<br>
+<b>Weight:</b> weight gain or weight loss<br>
+<b>Sleep:</b> difficulty falling asleep or excess sleepiness<br>
+<b>Also common:</b> fatigue or rapid and frenzied speaking<br>
+</p>
+<div class="text-center rounded-circle">
+<img src="static\images\bipolar2.jpg" style="width:350px; height:200px;" class="rounded-circle">
+</div>
+<br>
+
+		 <h5 style="color:blue;"><u>3.Treatments</u></h5><br>
+<p>
+<b>Therapies:</b>
+Support group, Cognitive behavioral therapy, Psychoeducation, Family therapy and Psychotherapy<br>
+<b>Medications:</b>
+Anticonvulsant, Antipsychotic and SSRIs(Always Consult to your own Psychiatrist)		<br>
+<b>Supportive care:</b>
+Hospitalization
+</p>
+
+
+<br>
+<h5 style="text-align:center; color:red;">Obsessive compulsive disorder (OCD)</h5>
+		 <h5 style="color:blue;"><u>1.Overview</u></h5><br>
+<p>
+Excessive thoughts (obsessions) that lead to repetitive behaviours (compulsions).<br>
+Obsessive-compulsive disorder is characterised by unreasonable thoughts and fears (obsessions) that lead to compulsive behaviours.<br>
+OCD often centres on themes such as a fear of germs or the need to arrange objects in a specific manner. Symptoms usually begin gradually and vary throughout life.<br>
+Treatment includes talk therapy, medication or both.<br>
+</p>
+
+		 <h5 style="color:blue;"><u>2.Symptoms</u></h5><br>
+<p>
+<b>Behavioural:</b> compulsive behaviour, agitation, compulsive hoarding, hypervigilance, impulsivity, meaningless repetition of own words, repetitive movements, ritualistic behaviour, social isolation, or persistent repetition of words or actions<br>
+<b>Mood:</b> anxiety, apprehension, guilt, or panic attack<br>
+<b>Psychological:</b> depression or fear<br>
+<b>Also common:</b> food aversion, nightmares, or repeatedly going over thoughts<br>
+</p>
+<div class="text-center rounded-circle">
+<img src="static\images\ocd2.jpg" style="width:350px; height:200px;" class="rounded-circle">
+</div>
+<br>
+
+		 <h5 style="color:blue;"><u>3.Treatments</u></h5><br>
+<p>
+<b>Therapies:</b>
+Support group, Cognitive behavioral therapy, Aversion therapy, Psychoeducation, Rational emotive behavior therapy, Exposure and respo<br>
+<b>Medications:</b>
+SSRIs, Anxiolytic and Antidepressant	(Always Consult to your own Psychiatrist)		<br>
+</p>
+
+
+<br>
+<h5 style="text-align:center; color:red;">Attention deficit hyperactivity disorder (ADHD)</h5>
+		 <h5 style="color:blue;"><u>1.Overview</u></h5><br>
+<p>
+A chronic condition including attention difficulty, hyperactivity and impulsiveness.<br>
+ADHD often begins in childhood and can persist into adulthood. It may contribute to low self-esteem, troubled relationships and difficulty at school or work.<br>
+Symptoms include limited attention and hyperactivity.<br>
+Treatments include medication and talk therapy<br>
+</p>
+
+		 <h5 style="color:blue;"><u>2.Symptoms</u></h5><br>
+<p>
+<b>Behavioural:</b> aggression, excitability, fidgeting, hyperactivity, impulsivity, irritability, lack of restraint, or persistent repetition of words or actions<br>
+<b>Cognitive: </b>absent-mindedness, difficulty focusing, forgetfulness, problem paying attention, or short attention span<br>
+<b>Mood: </b>anger, anxiety, boredom, excitement, or mood swings<br>
+<b>Also common: </b>depression or learning disability<br>
+</p>
+<div class="text-center rounded-circle">
+<img src="static\images\adhd2.jpg" style="width:350px; height:200px;" class="rounded-circle">
+</div>
+<br>
+
+		 <h5 style="color:blue;"><u>3.Treatments</u></h5><br>
+<p>
+<b>Therapies:</b>
+Support group, Cognitive behavioral therapy, Anger management, Counseling psychology, Psychoeducation, Family therapy and Applied	<br>
+<b>Medications:</b>
+Stimulant, Cognition-enhancing medication and Antihypertensive drug(Always Consult to your own Psychiatrist)	<br>
+</p>
+
+
+<br>
+<h5 style="text-align:center; color:red;">Insomnia</h5>
+		 <h5 style="color:blue;"><u>1.Overview</u></h5><br>
+<p>
+Persistent problems falling and staying asleep.<br>
+Most cases of insomnia are related to poor sleeping habits, depression, anxiety, lack of exercise, chronic illness or certain medication.<br>
+Symptoms may include difficulty falling or staying asleep and not feeling well-rested.<br>
+Treatment for insomnia consists of improving sleep habits, behaviour therapy and identifying and treating underlying causes. Sleeping pills may also be used, but should be monitored for side effect<br>
+</p>
+
+		 <h5 style="color:blue;"><u>2.Symptoms</u></h5><br>
+<p>
+<b>Cognitive: </b>lack of concentration or slowness in activity<br>
+<b>Also common:</b> sleeping difficulty, depression, headache, or irritability<br>
+</p>
+<div class="text-center rounded-circle">
+<img src="static\images\insomnia2.jpg" style="width:350px; height:200px;" class="rounded-circle">
+</div>
+<br>
+
+		 <h5 style="color:blue;"><u>3.Treatments</u></h5><br>
+<p>
+<b>Therapies:</b>
+Light therapy and Cognitive behavioral therapy<br>
+<b>Self-care:</b>
+Improved sleep habits and Light therapy<br>
+<b>Medications:</b>
+Sedative, Antihistamine and Antidepressan(Always Consult to your own Psychiatrist)	<br>
+</p>
+
+
+<br>
+<h5 style="text-align:center; color:red;">Can a mental illness be cured?</h5>
+
+
+
+<p>
+
+Treatment can involve both medications and psychotherapy, depending on the disease and its severity. At this time, most mental illnesses cannot be cured, but they can usually be treated effectively to minimize the symptoms and allow the individual to function in work, school, or social environments.
+
+</p>
+
+                    </h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="card-columns">
+                <div class="card ">
+                    <div class="card-body text-center card-style">
+                        <img style="border-radius: 10px;" class="img-fluid" src="static\images\clinical.jpg" alt="">
+                        <h6 class="card-text">Clinical Depression</h6>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body text-center card-style">
+                        <img style="border-radius: 10px;" class="img-fluid" src="static\images\anxiety.jpg" alt="">
+                        <h6 class="card-text">Anxiety Disorder</h6>
+                    </div>
+                </div>
+                <div class="card ">
+                    <div class="card-body text-center card-style">
+                        <img style="border-radius: 10px" class="img-fluid" src="static\images\bipolar.jpg" alt="">
+                        <h6 class="card-text">Bipolar Disorder</h6>
+                    </div>
+                </div>
+                <div class="card ">
+                    <div class="card-body text-center card-style">
+                        <img style="border-radius: 10px;" class="img-fluid" src="static\images\ocd.jpg" alt="">
+                        <h6 class="card-text">OCD Disorder</h6>
+                    </div>
+                </div>
+                <div class="card ">
+                    <div class="card-body text-center card-style">
+                        <img style="border-radius: 10px;" class="img-fluid" src="static\images\adhd.jpg" alt="">
+                        <h6 class="card-text">ADHD Disorder</h6>
+                    </div>
+                </div>
+                <div class="card ">
+                    <div class="card-body text-center card-style">
+                        <img style="border-radius: 10px;" class="img-fluid" src="static\images\insomnia.jpg" alt="">
+                        <h6 class="card-text">Insomnia Disorder</h6>
+                    </div>
+                </div>
+				<br>
+				<br>
+
+            </div>
+
+            <div class="col-sm">
+
+                <div>
+                    <h5 style="padding: 15px; background-color: rgb(153, 156, 150); color: white;"
+                        class="text-center mb-5 content-h1 rounded">
+                      SOME  TIPS FOR GOOD MENTAL HEALTH</h5>
+                </div>
+                <div class="details">
+
+                    <h5>
+
+                        Good mental health is characterised by a person's ability to fulfil a number of key functions and activities, including: the ability to learn,the ability to feel, express and manage a range of positive and negative emotions,the ability to form and maintain good relationships with others.</br></br>
+						<h5 style="text-align:center; color:red;">Why is good mental health important?</h5>
+
+
+<div class="text-center rounded-circle">
+<img src="static\images\gmen1.jpg" style="width:350px; height:200px;" class="rounded-circle">
+</div>
+<br>
+
+
+<p>
+
+Nurturing our mental health can also help us combat or prevent the mental health problems that are sometimes associated with a chronic physical illness. In some cases, it can prevent the onset or relapse of a physical or mental illness. Managing stress well, for instance, can have a positive impact on heart disease.
+
+</p>
+
+
+<br>
+<h5 style="text-align:center; color:red;">What are the five signs of good mental health?</h5>
+
+
+<div class="text-center rounded-circle">
+<img src="static\images\gmen2.jpg" style="width:350px; height:200px;" class="rounded-circle">
+</div>
+<br>
+
+
+<p>
+
+
+<b>You probably have good mental health if:</b><br>
+1.you are confident when faced with new situations or people.<br>
+2.you feel optimistic.<br>
+3.you do not always blame yourself.<br>
+4.you set goals.<br>
+5.you feel good about yourself.<br>
+6.you have good self esteem.
+</p>
+
+
+<br>
+
+
+
+<h5 style="text-align:center; color:red;">How do I get perfect mental health??</h5>
+
+
+<div class="text-center rounded-circle">
+<img src="static\images\gmen3.jpg" style="width:350px; height:200px;" class="rounded-circle">
+</div>
+<br>
+
+
+<p>
+
+
+
+<b>Some tips for good mental health:</b><br>
+1.Get plenty of sleep. Sleep is really important for our physical and mental health. ...<br>
+2.Eat well. ...<br>
+3.Avoid alcohol, smoking and drugs. ...<br>
+4.Get plenty of sunlight. ...<br>
+5.Manage stress. ...<br>
+6.Activity and exercise. ...<br>
+7.Do something you enjoy. ...<br>
+8.Connect with others and be sociable.
+</p>
+<br>
+
+<h5 style="text-align:center; color:red;">How can I be strong mentally?</h5>
+
+
+<div class="text-center rounded-circle">
+<img src="static\images\gmen4.jpg" style="width:350px; height:200px;" class="rounded-circle">
+</div>
+<br>
+
+
+<p>
+<b>Here are Some effective ways to become more mentally strong:</b><br>
+1.Focus on the moment. ...<br>
+2.Embrace adversity. ...<br>
+3.Exercise your mind. ...<br>
+4.Challenge yourself. ...<br>
+5.Respond positively. ...<br>
+6.Be mindful. ...<br>
+7.Don't be defeated by fear. ...<br>
+8.Be aware of self-talk.<br>
+
+
+
+</p>
+<br>
+<h5 style="text-align:center; color:red;">How can I improve my mental health without medication?</h5>
+
+
+<div class="text-center rounded-circle">
+<img src="static\images\gmen5.jpg" style="width:350px; height:200px;" class="rounded-circle">
+</div>
+<br>
+
+
+<p>
+
+Holistic treatment is a fast-growing segment of mental health treatment that offers natural options for those wondering how to treat mental illness without medication.<br>
+
+<b>Holistic treatments for mental illness include:</b><br>
+1.Meditation.<br>
+2.Yoga.<br>
+3.Fitness and nutrition.<br>
+4.Acupuncture.<br>
+5.Massage therapy.<br>
+
+</p>
+
+
+                    </h5>
+                </div>
+            </div>
+        </div>
+   <div>
+                    <h5 style="padding: 15px; background-color: rgb(153, 156, 150); color: white;"
+                        class="text-center mb-5 content-h1 rounded">
+                       KALAM MENTAL HEALTH DIAGNOSTIC CENTER<br>
+					  Email:kalamsardar2001@gmail.com </h5>
+                </div>
+</div>
+</section>
+
+				<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	</body>
+	</html>
