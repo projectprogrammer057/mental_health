@@ -8,7 +8,7 @@ model = pickle.load(open('life.pickle', 'rb'))
 
 @app.route('/')
 def home():
-    return render_template('psycho.html')
+    return render_template('index.html')
 
 
 @app.route('/predict',methods=["POST"])
@@ -39,12 +39,13 @@ def predict():
         output = model.predict(df)
         
         if output == 1:
-            res_val = "** Mental Disorder,Please  Consult to the Psychiatrist**"
+            res_val = "** Mental Disorder,Please Consult to the Psychiatrist**"
         else:
-            res_val = " **No Mental Disorder,Enjoy Your Life**"
+            res_val = " **No Mental Disorder,Enjoy of Your Life**"
+
         
 
-    return render_template('psycho.html', prediction_text='Patient has {}'.format(res_val))
+    return render_template('index.html', prediction_text='You have {}'.format(res_val))
 
 
 
